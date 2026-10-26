@@ -255,14 +255,25 @@ const Navbar = ({ handleOrderPopup }) => {
                 )}
 
               </div>
-            ) : (
-              <Link
-                to="/login"
-                className="bg-primary text-white px-4 py-2 rounded-full"
-              >
-                Login
-              </Link>
-            )}
+           
+) : (
+  <div className="flex items-center gap-2">
+    <Link
+      to="/login"
+      className="bg-primary text-white px-4 py-2 rounded-full"
+    >
+      Login
+    </Link>
+
+    <Link
+      to="/register"
+      className="border border-primary text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white duration-300"
+    >
+      Register
+    </Link>
+  </div>
+)}
+
           </div>
         </div>
       </div>
